@@ -34,7 +34,7 @@ export default function App() {
         <FlatList
           data={repositories}
           renderItem={({ item, index, separators }) => (
-            <View style={styles.repositoryContainer} key={item.key}>
+            <View key={index.toString()} style={styles.repositoryContainer}>
               <Text style={styles.repository}>{item.title}</Text>
 
               <View style={styles.techsContainer}>
